@@ -50,7 +50,7 @@ const MapsPage = () => {
 
           // Load the Google Maps script
           const script = document.createElement("script");
-          script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAPdZyN4RKJKbZeZ7aaVPGWuW-eUzTmOJg&callback=initMap`;
+          script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.MapsAPI_KEY}callback=initMap`;
           script.defer = true;
           document.head.appendChild(script);
         },
